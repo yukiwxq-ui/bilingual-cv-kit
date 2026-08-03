@@ -1,0 +1,46 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{my-resume-zh}[2026/07/03 Personal fork of zh_CN-Adobefonts_external.sty with HarmonyOS Sans SC as main font]
+
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+
+% CJK main/sans font: HarmonyOS Sans SC (Huawei), a modern humanist sans
+% used as a properly-licensed substitute for Microsoft YaHei (which is
+% not freely redistributable and not installed on this machine).
+% HarmonyOS Sans Fonts License Agreement (see fonts/HARMONYOS_SANS_LICENSE.txt)
+% grants a free, worldwide, royalty-free right to "use, copy, merge,
+% embed, bundle, redistribute and/or sell unmodified copies of
+% HarmonyOS Sans Fonts with any software" -- this notice satisfies the
+% agreement's "prominent notice" requirement for this software (this CV
+% template). Font files are bundled locally (Path below) so this package
+% has no dependency on system font installation. Swap the family name
+% for "Microsoft YaHei" on a machine that has the real font installed.
+\defaultfontfeatures{Path = fonts/, Extension = .ttf}
+\setCJKmainfont[
+  BoldFont = HarmonyOS_Sans_SC_Bold
+]{HarmonyOS_Sans_SC_Regular}
+\setCJKsansfont[
+  BoldFont = HarmonyOS_Sans_SC_Bold
+]{HarmonyOS_Sans_SC_Regular}
+\setCJKmonofont{HarmonyOS_Sans_SC_Regular}
+% NOTE: the Path/Extension default above is intentionally left active --
+% xeCJK resolves BoldFont lazily at first use (not at declaration time),
+% so resetting \defaultfontfeatures here would break \textbf in Chinese
+% text. This is safe because \setmainfont (Latin) is already fixed by
+% my-resume.cls before this package loads, and no Latin font is set
+% after this point.
+
+% No separate weights/styles beyond Regular/Bold are bundled, so all
+% family-alias commands point at the same two faces. These are kept only
+% so any content referencing \heiti / \songti / etc. does not break.
+\setCJKfamilyfont{zhsong}[Path=fonts/,Extension=.ttf]{HarmonyOS_Sans_SC_Regular}
+\setCJKfamilyfont{zhhei}[Path=fonts/,Extension=.ttf]{HarmonyOS_Sans_SC_Bold}
+\setCJKfamilyfont{zhfs}[Path=fonts/,Extension=.ttf]{HarmonyOS_Sans_SC_Regular}
+\setCJKfamilyfont{zhkai}[Path=fonts/,Extension=.ttf]{HarmonyOS_Sans_SC_Regular}
+
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+
+\endinput

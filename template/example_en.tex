@@ -1,0 +1,61 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+%
+% Example CV -- fictional persona "Zhang San", demonstrating my-resume.cls.
+% Compile: xelatex example_en.tex
+
+\documentclass{my-resume}
+\usepackage{linespacing_fix} % removes extra space before the next section
+\usepackage{cite}
+% Note: my-resume-zh is Chinese-only -- don't load it in an English-only CV.
+
+\begin{document}
+\pagenumbering{gobble}
+
+% English CVs conventionally skip the photo -- use \headerNoPhoto instead
+% of \photoheader (see example_zh.tex for the photo version).
+\headerNoPhoto{%
+  \name{Zhang San}
+  \contactInfo{+86 138-0000-0000}{zhangsan@example.com}{Based in: Shanghai}{Shanghai / Beijing \textbar\ Data Analysis}
+}
+
+\section{Summary}
+Only the master (full-experience) CV needs this section -- a job-tailored 1-page version skips it and spends the space on experience instead. 2-4 sentences: education, 1-2 headline achievements, target role.
+
+\section{Education}
+\entry{Some University (QS XX)}{2023.09 - 2025.07}{MSc Data Science}{Shanghai}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{Curriculum}: Machine learning, statistical inference, database systems, distributed computing
+  \item \textbf{Thesis}: Title + one sentence on method/data scale/key finding
+\end{itemize}
+\entry{Some University (QS XX)}{2019.09 - 2023.07}{BSc Computer Science}{Beijing}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{Relevant Coursework}: Data structures and algorithms, probability, linear algebra, database principles
+\end{itemize}
+
+\section{Internship \& Engagement}
+\entry{Some Tech Company}{2024.07 - 2024.09}{Data Analysis Intern \textperiodcentered\ Growth Team}{Shanghai}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{Bold lead-in + colon}: one sentence on what you did (use strong verbs -- "independently built", "led", "designed and implemented" -- avoid "Responsible for")
+  \item \textbf{Quantified result}: only real, verifiable numbers -- if you don't have one, stay qualitative. Never invent a number.
+\end{itemize}
+
+\section{Research \& Project Experience}
+\entry{Project Title}{2024.01 - 2024.06}{}{Shanghai}
+\role{Tools/stack used, comma-separated}{}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{Method/Design}: what you did and why
+  \item \textbf{Result/Validation}: quantified outcome, or a rigorous validation process
+  \item \textbf{Impact}: where this result was used, what problem it solved
+\end{itemize}
+
+\section{Skills \& Other}
+\entrySkillsSep
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{Programming \& Tools}: Python, SQL, Git
+  \item \textbf{Data Analysis}: pandas, statistical modelling, A/B testing
+  \item \textbf{Languages}: English (IELTS 7.5), Mandarin (native)
+\end{itemize}
+
+\end{document}
