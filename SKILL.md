@@ -17,6 +17,8 @@ Maintains a bilingual (中/英) LaTeX CV system: one master CV with every experi
 - For each new employer/position, create a folder within the user's existing `cv/`; for revisions, reuse that position's folder. Follow sibling naming conventions. Workspace/output copies are previews, not substitutes for saving to the requested CV project.
 - Follow the user's requested deliverable set. When all three versions are requested as PDF and TeX, provide Chinese `.tex/.pdf`, English `.tex/.pdf`, and a merged bilingual `.tex/.pdf`. The merged TeX is a wrapper that includes the language PDFs in order, not duplicated resume content. Regenerate both language PDFs and the merged PDF after edits.
 
+- Select internships and projects by direct relevance and verified evidence for the target role. Formal internship status alone never makes an entry mandatory. Omit weakly related entries and empty sections from tailored CVs; retain them in the master/content bank. Prioritise substantiated relevant project detail over generic transferable-skill claims; never recast teaching feedback as product user research or laboratory QC as LLM evaluation.
+
 ## First use in a new project
 
 This skill ships a generic template with a **fictional example persona**, not the user's real CV. On first use in a project:
