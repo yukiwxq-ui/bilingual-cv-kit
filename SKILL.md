@@ -89,3 +89,6 @@ Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse 
 ## Evidence-backed outcomes and JD alignment
 
 Write concrete, evidence-backed outcomes, not vague benefit claims. Prefer verified numbers for scope, adoption, quality and measured impact, with the sample/evaluation setting and a baseline when claiming improvement. Distinguish activity counts and team usage from personal impact; never invent percentages, savings, users or causal gains. Where no impact metric exists, state the delivered capability and observed use explicitly, preserving limitations. Map each selected bullet to an actual JD requirement; record unsupported requirements instead of keyword-stuffing.
+
+## Evaluation metric semantics
+Lead with the task-relevant outcome metric. Keep record/row matching metrics distinct from column/field-value metrics, and precision distinct from F1. Explain the conditioning set for conditional F1; do not imply it measures all reference records. Never convert row precision of 1.000 into a claim of perfect extraction or field accuracy. Preserve metric scope and limitations even when quantifying CV results.
