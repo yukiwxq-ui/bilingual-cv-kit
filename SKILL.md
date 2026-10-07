@@ -85,3 +85,7 @@ pdfunite <Name>_<Direction>_zh.pdf <Name>_<Direction>_en.pdf <Name>_<Direction>_
 ## When asked to build a CV for a new job direction
 
 Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse the JD's keywords → filter the content bank by fit tags → skip the Personal Summary in tailored versions (master only) → write bullets per the STAR + quantification formula → filter the Skills section by whole category → compile and verify → check page fill → generate the requested bilingual PDF and, when requested, its TeX wrapper.
+
+## Evidence-backed outcomes and JD alignment
+
+Write concrete, evidence-backed outcomes, not vague benefit claims. Prefer verified numbers for scope, adoption, quality and measured impact, with the sample/evaluation setting and a baseline when claiming improvement. Distinguish activity counts and team usage from personal impact; never invent percentages, savings, users or causal gains. Where no impact metric exists, state the delivered capability and observed use explicitly, preserving limitations. Map each selected bullet to an actual JD requirement; record unsupported requirements instead of keyword-stuffing.

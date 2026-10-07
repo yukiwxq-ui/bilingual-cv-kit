@@ -140,3 +140,7 @@ Build your own content bank here — one entry per project/experience, in the sa
 
    **Filenames**: pick a convention and stay consistent, e.g. `<Name>_<Direction>_<Language>.tex/.pdf` for tailored versions (short, filesystem-safe direction label, no `/`), and plain `<Name>_<Language>.tex/.pdf` for the master CV (no direction label — it isn't tailored to one).
 9. **If you want a merged bilingual PDF per direction**: concatenate with `pdfunite <name>_<direction>_zh.pdf <name>_<direction>_en.pdf <name>_<direction>_merged.pdf` (page concatenation; also create a TeX wrapper when requested). **Regenerate this after any edit to either language's `.tex`/`.pdf`** — it goes stale silently otherwise since it isn't compiled from source.
+
+## Evidence-backed outcomes and JD alignment
+
+Write concrete, evidence-backed outcomes, not vague benefit claims. Prefer verified numbers for scope, adoption, quality and measured impact, with the sample/evaluation setting and a baseline when claiming improvement. Distinguish activity counts and team usage from personal impact; never invent percentages, savings, users or causal gains. Where no impact metric exists, state the delivered capability and observed use explicitly, preserving limitations. Map each selected bullet to an actual JD requirement; record unsupported requirements instead of keyword-stuffing.
