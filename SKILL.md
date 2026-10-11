@@ -12,8 +12,8 @@ Maintains a bilingual (中/英) LaTeX CV system: one master CV with every experi
 ## Preserve the established CV system
 
 - Read the existing project's personal `cv/template/CONTENT_NOTES.md` before editing; it overrides generic examples for that person's wording and preferences.
-- Keep the established template, fonts, font sizes, spacing, section structure and colours. This kit's default is black text and black rules; a request to tailor or polish content is not permission to redesign it or add accent colours. Make only necessary portability fixes without changing the visual design.
-- Finalise a substantive, information-rich one-page Chinese CV first. Translate its entire content into English, preserving every experience, qualification, tool, numerical result and caveat. English may span multiple pages. Never cut Chinese content, abbreviate English, or shrink English typography to force one page.
+- Keep the established template, fonts, font sizes, spacing, section styling and colours (section order follows relevance). This kit's default is black text and black rules; a request to tailor or polish content is not permission to redesign it or add accent colours. Make only necessary portability fixes without changing the visual design.
+- Finalise a substantive, information-rich one-page Chinese CV first. Translate its entire content into English, preserving every experience, qualification, tool, numerical result and caveat. English may span multiple pages. Never cut Chinese content or shrink English typography to force one page. An explicit role-specific request for a one-page English CV overrides the English page default; prioritise its evidence without reducing the Chinese version.
 - For each new employer/position, create a folder within the user's existing `cv/`; for revisions, reuse that position's folder. Follow sibling naming conventions. Workspace/output copies are previews, not substitutes for saving to the requested CV project.
 - Follow the user's requested deliverable set. When all three versions are requested as PDF and TeX, provide Chinese `.tex/.pdf`, English `.tex/.pdf`, and a merged bilingual `.tex/.pdf`. The merged TeX is a wrapper that includes the language PDFs in order, not duplicated resume content. Regenerate both language PDFs and the merged PDF after edits.
 
@@ -84,7 +84,7 @@ pdfunite <Name>_<Direction>_zh.pdf <Name>_<Direction>_en.pdf <Name>_<Direction>_
 
 ## When asked to build a CV for a new job direction
 
-Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse the JD's keywords → filter the content bank by fit tags → skip the Personal Summary in tailored versions (master only) → write bullets per the STAR + quantification formula → filter the Skills section by whole category → compile and verify → check page fill → generate the requested bilingual PDF and, when requested, its TeX wrapper.
+Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse the JD's keywords → filter the content bank by fit tags → skip the Personal Summary in tailored versions (master only) → write bullets per the STAR + quantification formula → select relevant skills within or across categories → compile and verify → check page fill → generate the requested bilingual PDF and, when requested, its TeX wrapper.
 
 ## Evidence-backed outcomes and JD alignment
 
@@ -92,3 +92,7 @@ Write concrete, evidence-backed outcomes, not vague benefit claims. Prefer verif
 
 ## Evaluation metric semantics
 Lead with the task-relevant outcome metric. Keep record/row matching metrics distinct from column/field-value metrics, and precision distinct from F1. Explain the conditioning set for conditional F1; do not imply it measures all reference records. Never convert row precision of 1.000 into a claim of perfect extraction or field accuracy. Preserve metric scope and limitations even when quantifying CV results.
+
+
+## Mandatory job-tailoring strategy
+For every tailoring or experience-reframing request, read `references/job-tailoring-strategy.md`. It governs rejection-risk diagnosis, the JD-to-evidence map, selection from the entire content bank, role-specific narratives, dynamic section order, complementary evidence, quantification, whole-CV review, and interview checks. It overrides legacy default-project selection, fixed section order, and whole-category skill inclusion while preserving visual design and personal facts. Missing-data simulations must be clearly separated from verified formal CV content; follow the reference's confirmation and output rules. Integrate future revisions into this reference rather than appending duplicate instructions.
