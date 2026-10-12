@@ -84,7 +84,7 @@ pdfunite <Name>_<Direction>_zh.pdf <Name>_<Direction>_en.pdf <Name>_<Direction>_
 
 ## When asked to build a CV for a new job direction
 
-Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse the JD's keywords → filter the content bank by fit tags → skip the Personal Summary in tailored versions (master only) → write bullets per the STAR + quantification formula → select relevant skills within or across categories → compile and verify → check page fill → generate the requested bilingual PDF and, when requested, its TeX wrapper.
+Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse the JD's keywords → filter the content bank by fit tags → assess whether an optional Profile adds value → write bullets per the STAR + quantification formula → select relevant skills within or across categories → compile and verify → check page fill → generate the requested bilingual PDF and, when requested, its TeX wrapper.
 
 ## Evidence-backed outcomes and JD alignment
 
@@ -95,4 +95,4 @@ Lead with the task-relevant outcome metric. Keep record/row matching metrics dis
 
 
 ## Mandatory job-tailoring strategy
-For every tailoring or experience-reframing request, read `references/job-tailoring-strategy.md`. It governs rejection-risk diagnosis, the JD-to-evidence map, selection from the entire content bank, role-specific narratives, dynamic section order, complementary evidence, quantification, whole-CV review, and interview checks. It overrides legacy default-project selection, fixed section order, and whole-category skill inclusion while preserving visual design and personal facts. Disclose provisional draft assumptions together in chat, not as labels inside the CV; proceed without item-by-item confirmation while retaining their unverified provenance; follow the reference's confirmation and output rules. Integrate future revisions into this reference rather than appending duplicate instructions.
+For every tailoring or experience-reframing request, read `references/job-tailoring-strategy.md`. It governs rejection-risk diagnosis, the JD-to-evidence map, selection from the entire content bank, role-specific narratives, dynamic section order, complementary evidence, quantification, whole-CV review, and interview checks. It overrides legacy default-project selection, fixed section order, and whole-category skill inclusion while preserving visual design and personal facts. Classify direct, transferable, knowledge-only and missing evidence before drafting; do not put invented facts in formal CVs. Follow the latest diagnosis, review, application-field and stopping rules linked from the reference. Integrate future revisions into this reference rather than appending duplicate instructions.
