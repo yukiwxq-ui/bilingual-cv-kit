@@ -86,6 +86,9 @@ pdfunite <Name>_<Direction>_zh.pdf <Name>_<Direction>_en.pdf <Name>_<Direction>_
 
 Follow the "Tailoring workflow" section in `CONTENT_NOTES.md` end to end: parse the JD's keywords → filter the content bank by fit tags → assess whether an optional Profile adds value → write bullets per the STAR + quantification formula → select relevant skills within or across categories → compile and verify → check page fill → generate the requested bilingual PDF and, when requested, its TeX wrapper.
 
+## Local personal project reference
+For this user’s Alexandria collaboration and its distinction from the independent VecTraits research, read `references/personal/Alexandria.md` and the existing CV project’s personal content notes. This local-only reference contains team-level evidence and user-confirmed participation across the described workstreams; do not convert team achievements into individual claims.
+
 ## Evidence-backed outcomes and JD alignment
 
 Write concrete, evidence-backed outcomes, not vague benefit claims. Prefer verified numbers for scope, adoption, quality and measured impact, with the sample/evaluation setting and a baseline when claiming improvement. Distinguish activity counts and team usage from personal impact; never invent percentages, savings, users or causal gains. Where no impact metric exists, state the delivered capability and observed use explicitly, preserving limitations. Map each selected bullet to an actual JD requirement; record unsupported requirements instead of keyword-stuffing.
@@ -93,6 +96,7 @@ Write concrete, evidence-backed outcomes, not vague benefit claims. Prefer verif
 ## Evaluation metric semantics
 Lead with the task-relevant outcome metric. Keep record/row matching metrics distinct from column/field-value metrics, and precision distinct from F1. Explain the conditioning set for conditional F1; do not imply it measures all reference records. Never convert row precision of 1.000 into a claim of perfect extraction or field accuracy. Preserve metric scope and limitations even when quantifying CV results.
 
+For this user's latest education dates, read `references/personal/EDUCATION.md` and the personal CV content notes.
 
 ## Mandatory job-tailoring strategy
 For every tailoring or experience-reframing request, read `references/job-tailoring-strategy.md`. It governs rejection-risk diagnosis, the JD-to-evidence map, selection from the entire content bank, role-specific narratives, dynamic section order, complementary evidence, quantification, whole-CV review, and interview checks. It overrides legacy default-project selection, fixed section order, and whole-category skill inclusion while preserving visual design and personal facts. Classify direct, transferable, knowledge-only and missing evidence before drafting; do not put invented facts in formal CVs. Follow the latest diagnosis, review, application-field and stopping rules linked from the reference. Integrate future revisions into this reference rather than appending duplicate instructions.
@@ -109,3 +113,9 @@ Whenever creating or revising a role CV, also create/update a separate `## 网�
 ## English-JD delivery override
 When the user supplies an English-language JD (or explicitly identifies English as the application language), the English CV must occupy exactly one substantive, visually full page. This overrides the default uncapped complete-translation rule. Select and expand the strongest relevant evidence rather than translating everything mechanically. Preserve the established readable font sizes and margins; do not fill space with repetition, invented results, stretched spacing or oversized text. Inspect the rendered page and use real detail to reduce excessive bottom whitespace, aiming for roughly 1.5–2.5 cm where the template permits, never overflowing to page two.
 Use English/ASCII filenames for all application CV artifacts for that role, e.g. Xiaoqi_Wu_Reckitt_Analytical_RD_CV_EN.pdf/.tex, with CN and Bilingual suffixes for companion versions. Preserve the existing Chinese employer/role folder convention and JD.md filename. On revision, rename the current deliverables coherently and update merged-TeX PDF references and JD links rather than leaving competing submission copies. Record the format requirement in JD.md. A later explicit user instruction takes precedence.
+
+## JD-language full-page rule (mandatory)
+
+Treat the language of the user-supplied JD as the application's primary language unless the user explicitly says otherwise. If the JD is primarily Chinese, the Chinese CV must be a substantive, visually full one-page document; if it is primarily English, the English CV must be a substantive, visually full one-page document. The companion language version remains required by the established delivery workflow, but the primary-language version is the page-fill priority.
+
+Before delivery, render and inspect the primary-language PDF. A visibly sparse lower quarter is a failure. Fill it only by adding verified, JD-relevant evidence: expand an existing bullet with concrete scope, process, deliverable or decision; restore a relevant bullet; or add a complementary, verified experience. Do not fill with duplicated claims, generic adjectives, stretched spacing, altered margins or invented results. This requirement applies on every revision as well as initial creation.
